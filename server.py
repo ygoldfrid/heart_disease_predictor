@@ -23,7 +23,9 @@ def predict_single():
 @app.route("/predict_multiple", methods=["POST"])
 def predict_multiple():
     body = request.get_json()
-    samples = np.array([list(sample.values()) for sample in json.loads(body)])
+    if type(body) == str:
+        body = json.loads(body)
+    samples = np.array([list(sample.values()) for sample in body])
     predictions = CLF.predict(samples)
     return json.dumps({"predictions": predictions.tolist()})
 
