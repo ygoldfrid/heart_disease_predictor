@@ -5,7 +5,7 @@ Logistic Regression machine learning model for predicting heart disease in patie
 # Usage
 The model is being served on Heroku [here](http://itc-heart-disease-predictor.herokuapp.com/)
 
-You can just fill out the form for a patients symptoms and predict the likelihood of a heart disease.
+You can just fill out the form for a patient's symptoms and predict the likelihood of a heart disease.
 
 # Dataset
 Kaggle's [Heart Disease UCI](https://www.kaggle.com/ronitf/heart-disease-uci) dataset compiled by [Ronit Feldman](https://www.linkedin.com/in/ronit-feldman-a05198118/)
