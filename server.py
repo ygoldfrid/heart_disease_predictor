@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import pickle
 import json
@@ -28,4 +29,9 @@ def predict_multiple():
 
 
 if __name__ == '__main__':
-    app.run()
+    port = os.environ.get('PORT')
+
+    if port:
+        app.run(host='0.0.0.0', port=int(port))
+    else:
+        app.run()
